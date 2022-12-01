@@ -1,0 +1,51 @@
+body {
+    padding: 0 30px;
+}
+#src-btn, .screenshot {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#src-btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #4a98f7;
+    bottom: 15px;
+}
+
+.src-preview {
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.src-preview.show {
+    display: block;
+}
+.screenshot {
+    
+    width: 70%;
+    top: 50%;
+    aspect-ratio: 16/9;
+}
+.screenshot img {
+    width: 100%;
+
+}
+
+#close-btn {
+    position: absolute;
+    right: -25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
